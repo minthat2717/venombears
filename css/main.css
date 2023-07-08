@@ -90,9 +90,7 @@ body {
   background-color: #cfddd3;
   color: #2e2828;
 }
-/* .vword {
-  filter: brightness(0.5);
-} */
+
 .vb {
   display: none;
   margin-top: 500px;
@@ -120,10 +118,7 @@ body {
   text-decoration: none;
   font-family: myfont2;
 }
-.main {
-  min-height: 100vh;
-  transition: filter 0ms ease-in-out 300ms;
-}
+
 .popup {
   margin-top: 5px;
   position: fixed;
