@@ -126,7 +126,7 @@ body {
 }
 .popup {
   margin-top: 5px;
-  position: absolute;
+  position: fixed;
   top: -300%;
   left: 50%;
   overflow: auto;
