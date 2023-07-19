@@ -16,7 +16,7 @@ var p4 =
   "It's showtime! As the mainnet of Venom beckons, we'll proudly mint our enchanting Venom Bears. Within our lively Discord realm, special roles and channels will be crafted, providing exclusive havens for our cherished bear holders to connect and thrive. But here's the best part—our community's voice matters! We'll establish a democratic DAO, where you have a say in how we shape our bear-y awesome future.";
 
 var p5 =
-  "Introducing the mighty $HONEY token! It's time for our bears to roam freely in the Venom Mainnet. Get ready to step into the incredible \"Bear Shop,\" where you can snag Whitelist spots and precious NFTs using the delightful $BEAR token. We've created a bustling marketplace, filled with endless wonders and boundless opportunities. Let the bear revolution take center stage!";
+  "Introducing the mighty $HONEY token! It's time for our bears to roam freely in the Venom Mainnet. Get ready to step into the incredible \"Bear Shop,\" where you can snag Whitelist spots and precious NFTs using the delightful $HONEY token. We've created a bustling marketplace, filled with endless wonders and boundless opportunities. Let the bear revolution take center stage!";
 
 var p6 =
   "Our story doesn't end here; it's just the beginning of an ever-evolving adventure! The Venom Bears project is built upon the spirit of our community. You, the bear enthusiasts, hold the reins to our future. Together, we'll continue to shape new horizons, embark on thrilling escapades, and create a legacy that celebrates the magic of bears. Let's paint the digital realm with our joyful bear vibes and leave a mark that'll last forever!";
