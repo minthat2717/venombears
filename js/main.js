@@ -63,4 +63,5 @@ document
   .querySelector(".popup .close-btn")
   .addEventListener("click", function () {
     document.body.classList.remove("active-popup");
+    document.body.classList.remove("blur-filter");
   });
