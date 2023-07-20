@@ -210,7 +210,6 @@ body.active-popup .popup {
   body {
     background-image: url("../src/img/vecteezy_minimalist-dark-gradient-wave-background-simple-design-for_7718309.jpg");
     background-position: center;
-    background-attachment: fixed;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
