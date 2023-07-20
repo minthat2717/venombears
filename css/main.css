@@ -176,9 +176,7 @@ body {
     rgba(8, 8, 8, 1) 100%
   );
 }
-.home {
-  background-color: rgb(21, 21, 21);
-}
+
 body.active-popup section {
   filter: blur(10px);
 }
