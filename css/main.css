@@ -167,9 +167,17 @@ body {
 body.active-popup {
   overflow: auto;
 }
-body.active-popup .mai {
+body {
+  background: url(../src/img/vecteezy_minimalist-dark-gradient-wave-background-simple-design-for_7718309.jpg)
+    no-repeat center fixed;
+}
+.home {
+  background-color: rgb(21, 21, 21);
+}
+body.active-popup section {
   filter: blur(10px);
 }
+
 body.active-popup .popup {
   top: 50%;
   opacity: 1;
@@ -192,9 +200,12 @@ body.active-popup .popup {
   -webkit-filter: blur(2px);
   -moz-filter: blur(2px);
   -o-filter: blur(2px);
-  filter: blur(2px);
+  filter: blur(0px);
 }
 
+.ph {
+  display: no;
+}
 @media only screen and (max-width: 820px) {
   .d1 {
     display: none;
@@ -203,7 +214,7 @@ body.active-popup .popup {
     display: none;
   }
   .ve {
-    display: block;
+    display: flex;
   }
   .vb {
     margin-top: 500px;
@@ -212,5 +223,11 @@ body.active-popup .popup {
   }
   .vb:hover {
     filter: grayscale(0);
+  }
+  .pc {
+    display: none;
+  }
+  .ph {
+    display: block;
   }
 }
