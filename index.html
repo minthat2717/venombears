@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/faq.css" rel="stylesheet" />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,24 +28,33 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-
-    <title>VENOM BEARS</title>
+    <style>
+      .ph {
+        display: none;
+      }
+      @media only screen and (max-width: 820px) {
+        .pcd {
+          display: none;
+        }
+        .ph {
+          display: block;
+        }
+      }
+    </style>
+    <title>Venom Bears</title>
   </head>
-  <body style="background-color: rgb(21, 21, 21); height: 100vh">
-    <!-- nav start -->
+  <body>
+    <!--navbar start-->
     <nav
-      class="navbar navbar-expand-lg sticky-top"
+      class="navbar navbar-expand-lg sticky-top shadow"
       style="background-color: rgb(21, 21, 21)"
     >
-      <div class="container-lg">
-        <div class="ms-0">
-          <a class="navbar-brand" href="./"
-            ><img src="./src/img/vlogo.jpg" alt="venomok" width="90px"
-          /></a>
-        </div>
-
+      <div class="container text-white">
+        <a class="navbar-brand" href="./"
+          ><img src="./src/img/vlogo.jpg" alt="venomok" width="90px"
+        /></a>
         <button
-          class="navbar-toggler text-white-50"
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -53,9 +62,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-light navbar-toggler-icon">
-            <i class="fas fa-bars" style="color: #fff; font-size: 28px"></i
-          ></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto font">
@@ -63,35 +70,25 @@
               <a
                 class="nav-link p-0 ps-1 pe-1 text-white"
                 aria-current="page"
-                href="./index.html"
+                href="#home"
                 >Home</a
               >
             </li>
             <li class="nav-item m-auto me-2 my-2">
-              <a
-                class="nav-link p-0 ps-1 pe-1 text-white"
-                href="./src/description.html"
+              <a class="nav-link p-0 ps-1 pe-1 text-white" href="#description"
                 >Description</a
               >
             </li>
             <li class="nav-item m-auto me-2 my-2">
-              <a
-                class="nav-link p-0 ps-1 pe-1 text-white"
-                href="./src/roadmap.html"
+              <a class="nav-link p-0 ps-1 pe-1 text-white" href="#roadmap"
                 >Roadmap</a
               >
             </li>
             <li class="nav-item m-auto me-2 my-2">
-              <a
-                class="nav-link p-0 ps-1 pe-1 text-white"
-                href="./src/team.html"
-                >Team</a
-              >
+              <a class="nav-link p-0 ps-1 pe-1 text-white" href="#team">Team</a>
             </li>
             <li class="nav-item m-auto me-2 my-2">
-              <a class="nav-link p-0 ps-1 pe-1 text-white" href="./src/faq.html"
-                >FAQ</a
-              >
+              <a class="nav-link p-0 ps-1 pe-1 text-white" href="#faq">FAQ</a>
             </li>
             <li class="nav-item m-auto me-2 my-2">
               <a
@@ -114,58 +111,559 @@
         </div>
       </div>
     </nav>
-    <!-- navbar end -->
-
-    <div class="container mt-3 text-center mb-3 d1">
-      WE'RE ALL GONNA BE OKAY
-    </div>
-    <div class="container-lg m-auto venom" style="height: 60%">
-      <div class="container-lg row ms-auto" style="height: 100%">
-        <div class="col-md-2 vword">
-          <img src="./src/img/Vph.png" alt="V" width="130%" height="100%" />
+    <!--navbar end-->
+    <!-- home section start -->
+    <section class="home" id="home" style="height: 100vh">
+      <div class="container-lg" style="height: 100%">
+        <div class="row">
+          <div class="container text-center d1 mt-5 mb-3">
+            WE'RE ALL GONNA BE OKAY
+          </div>
+          <div class="container-lg mt-3 venom" style="height: 60%">
+            <div class="container-lg row ms-auto" style="height: 100%">
+              <div class="col-md-2 vword">
+                <img
+                  src="./src/img/Vph.png"
+                  alt="V"
+                  width="130%"
+                  height="100%"
+                />
+              </div>
+              <div class="col-md-2 me-3 vword">
+                <img
+                  src="./src/img/Eph.png"
+                  alt="E"
+                  width="130%"
+                  height="100%"
+                />
+              </div>
+              <div class="col-md-2 me-3 vword">
+                <img
+                  src="./src/img/Nph.png"
+                  alt="N"
+                  width="130%"
+                  height="100%"
+                />
+              </div>
+              <div class="col-md-2 me-3 vword">
+                <img
+                  src="./src/img/Oph.png"
+                  alt="O"
+                  width="130%"
+                  height="100%"
+                />
+              </div>
+              <div class="col-md-2 venom vword">
+                <img
+                  src="./src/img/M1ph.png"
+                  alt="M"
+                  width="130%"
+                  height="100%"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-2 me-3 vword">
-          <img src="./src/img/Eph.png" alt="E" width="130%" height="100%" />
-        </div>
-        <div class="col-md-2 me-3 vword">
-          <img src="./src/img/Nph.png" alt="N" width="130%" height="100%" />
-        </div>
-        <div class="col-md-2 me-3 vword">
-          <img src="./src/img/Oph.png" alt="O" width="130%" height="100%" />
-        </div>
-        <div class="col-md-2 venom vword">
-          <img src="./src/img/M1ph.png" alt="M" width="130%" height="100%" />
+        <div class="ve" style="height: 80%; width: 100%">
+          <div
+            class="container row ve"
+            style="height: 100%; width: 100%; margin: auto"
+          >
+            <div
+              class="col-5 vb"
+              style="
+                height: 100%;
+                width: 50%;
+                align-items: center;
+                display: flex;
+              "
+            >
+              <img src="./src/img/Vph.png" alt="V" width="100%" height="85%" />
+            </div>
+            <div
+              class="col-5 vb m-auto"
+              style="
+                height: 100%;
+                width: 50%;
+                align-items: center;
+                display: flex;
+              "
+            >
+              <img src="./src/img/B.png" alt="V" width="100%" height="85%" />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="ve" style="height: 80%; width: 100%">
-      <div
-        class="container row ve"
-        style="height: 100%; width: 100%; margin: auto"
-      >
-        <div
-          class="col-5 vb m-auto"
-          style="height: 100%; width: 50%; align-items: center; display: flex"
-        >
-          <img src="./src/img/Vph.png" alt="V" width="100%" height="85%" />
+    </section>
+    <!-- home section end -->
+
+    <!-- description section start -->
+    <section
+      class="description px-5 min-vh-100 align-content-center align-items-center d-flex"
+      id="description"
+    >
+      <div class="container pcd row">
+        <div class="col-6">
+          <img src="./src/img/bear.png" alt="" />
         </div>
-        <div
-          class="col-5 vb m-auto"
-          style="height: 100%; width: 50%; align-items: center; display: flex"
-        >
-          <img src="./src/img/B.png" alt="V" width="100%" height="85%" />
+        <div class="col-6 p-2">
+          <h1
+            class="text-center text-white mt-0"
+            style="font-family: myfont; font-size: 50px"
+          >
+            Description
+          </h1>
+          <p
+            class="mt-5 text-white"
+            style="font-family: myfont3; font-size: x-large; font-weight: 600"
+          >
+            - Welcome to Venom Bears, where cuteness meets the blockchain!
+            <br />
+            - We're a vibrant NFT collection that celebrates the charm of
+            adorable bears.<br />
+            - Collect and connect with a passionate community of bear
+            enthusiasts.<br />
+            - Join us on this bear-tastic journey as we shape the future of NFTs
+            with - our captivating art and a spirit of togetherness. <br />
+            - 10,000 Bears will surround the Venom Blockchain sooner than you
+            think!
+          </p>
         </div>
       </div>
-    </div>
-    <!--footer start-->
+      <div class="container ph mt-3">
+        <h1 class="text-center text-white mt-5" style="font-family: myfont">
+          Description
+        </h1>
+        <hr class="text-white-50" />
+        <p
+          class="m-auto text-white"
+          style="font-family: myfont3; font-size: larger; font-weight: 600"
+        >
+          - Welcome to Venom Bears, where cuteness meets the blockchain!
+          <br /><br />
+          - We're a vibrant NFT collection that celebrates the charm of adorable
+          bears.<br /><br />
+          - Collect and connect with a passionate community of bear
+          enthusiasts.<br /><br />
+          - Join us on this bear-tastic journey as we shape the future of NFTs
+          with - our captivating art and a spirit of togetherness. <br /><br />
+          - 10,000 Bears will surround the Venom Blockchain sooner than you
+          think!
+        </p>
+        <hr />
+      </div>
+    </section>
+    <!-- description section end -->
 
-    <div class="footer">
-      <p class="text-center text-muted" style="font-size: smaller">
-        © 2023, Venom Bears
-      </p>
+    <!-- roadmap start  -->
+    <section
+      class="roadmap min-vh-100 align-content-center align-items-center d-flex"
+      id="roadmap"
+    >
+      <div class="m-auto">
+        <h1 class="card-title text-center mb-3" style="color: white">
+          Road Map
+        </h1>
+        <div class="container row m-auto mt-5 mai">
+          <!-- phase 1 -->
+
+          <div class="col-lg-4 mb-3">
+            <div
+              class="card border-0"
+              style="background-color: rgb(37, 38, 38); color: #8ba7c5"
+            >
+              <div class="card-body">
+                <h3 class="card-title text-center">Phase 1</h3>
+                <hr />
+                <p class="card-text">Bearlicious Beginnings</p>
+              </div>
+              <div class="card-footer">
+                <div class="media align-items-center">
+                  <div class="media-body">
+                    <a
+                      class="card-link text-uppercase text-white"
+                      id="open-popup1"
+                      href="javascript://"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- phase2 -->
+          <div class="col-lg-4 mb-3">
+            <div
+              class="card border-0"
+              style="background-color: rgb(37, 38, 38); color: #8ba7c5"
+            >
+              <div class="card-body">
+                <h3 class="card-title text-center">Phase 2</h3>
+                <hr />
+                <p class="card-text">Bear-mingling and Playful Ventures</p>
+              </div>
+              <div class="card-footer">
+                <div class="media align-items-center">
+                  <div class="media-body">
+                    <a
+                      class="card-link text-uppercase text-white"
+                      id="open-popup2"
+                      href="javascript://"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- phase 3-->
+          <div class="col-lg-4 mb-3">
+            <div
+              class="card border-0"
+              style="background-color: rgb(37, 38, 38); color: #8ba7c5"
+            >
+              <div class="card-body">
+                <h3 class="card-title text-center">Phase 3</h3>
+                <hr />
+                <p class="card-text">Bear's Awakening and the Web Wonder</p>
+              </div>
+              <div class="card-footer">
+                <div class="media align-items-center">
+                  <div class="media-body">
+                    <a
+                      class="card-link text-uppercase text-white"
+                      id="open-popup3"
+                      href="javascript://"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- phase 4 -->
+          <div class="col-lg-4 mb-3">
+            <div
+              class="card border-0"
+              style="background-color: rgb(37, 38, 38); color: #8ba7c5"
+            >
+              <div class="card-body">
+                <h3 class="card-title text-center">Phase 4</h3>
+                <hr />
+                <p class="card-text">
+                  Bear's Grand Entrance and Community Empowerment
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="media align-items-center">
+                  <div class="media-body">
+                    <a
+                      class="card-link text-uppercase text-white"
+                      id="open-popup4"
+                      href="javascript://"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- phase 5 -->
+          <div class="col-lg-4 mb-3">
+            <div
+              class="card border-0"
+              style="background-color: rgb(37, 38, 38); color: #8ba7c5"
+            >
+              <div class="card-body">
+                <h3 class="card-title text-center">Phase 5</h3>
+                <hr />
+                <p class="card-text">
+                  Crafting Bear Legends and Community-led Adventures
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="media align-items-center">
+                  <div class="media-body">
+                    <a
+                      class="card-link text-uppercase text-white"
+                      id="open-popup5"
+                      href="javascript://"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- phase 6 -->
+          <div class="col-lg-4 mb-3">
+            <div
+              class="card border-0"
+              style="background-color: rgb(37, 38, 38); color: #8ba7c5"
+            >
+              <div class="card-body">
+                <h3 class="card-title text-center">Phase 6</h3>
+                <hr />
+                <p class="card-text">
+                  Crafting Bear Legends and Community-led Adventures
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="media align-items-center">
+                  <div class="media-body">
+                    <a
+                      class="card-link text-uppercase text-white"
+                      id="open-popup6"
+                      href="javascript://"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- roadmap end -->
+
+    <!-- team section start -->
+    <section
+      class="team min-vh-100 align-content-center align-items-center d-flex"
+      id="team"
+    >
+      <div class="m-auto">
+        <h1 class="card-title text-center mb-3 mt-5" style="color: white">
+          TEAM
+        </h1>
+        <div class="container row m-auto">
+          <!--co-founder-->
+          <div class="col-md-6 mt-5">
+            <div
+              class="card profile-card"
+              style="background-color: rgb(38, 37, 38); height: 80%"
+            >
+              <div class="card-body pt-5">
+                <img
+                  src="./src/img/teddy.png"
+                  alt="profile-image"
+                  class="profile"
+                />
+                <h5 class="card-title text-center">TEDDY BEAR</h5>
+                <hr class="text-white" />
+                <p class="card-text text-center text-white-50">
+                  Brings a wealth of knowledge and expertise to the team. With a
+                  strong background in marketing and a deep understanding of the
+                  industry, Max leads our strategic initiatives, driving growth
+                  and creating impactful marketing campaigns that amplify the
+                  reach of Venom Bears.
+                </p>
+              </div>
+            </div>
+            <p class="mt-3 w-100 float-left text-center text-white">
+              <strong>CO-FOUNDER</strong>
+            </p>
+          </div>
+          <!-- co-founder 2 -->
+          <div class="col-md-6 mt-5">
+            <div
+              class="card profile-card"
+              style="background-color: rgb(38, 37, 38); height: 80%"
+            >
+              <div class="card-body pt-5">
+                <img
+                  src="./src/img/cof2.png"
+                  alt="profile-image"
+                  class="profile"
+                />
+                <h5 class="card-title text-center">Bear Maven</h5>
+                <hr class="text-white" />
+                <p class="card-text text-center text-white-50">
+                  Spent years immersed in the world of NFT projects across
+                  various networks. With a passion for innovation and a proven
+                  track record of success, Stella's invaluable experience shapes
+                  the direction of Venom Bears.
+                </p>
+              </div>
+            </div>
+            <p class="mt-3 w-100 float-left text-center text-white">
+              <strong>CO-FOUNDER</strong>
+            </p>
+          </div>
+          <!-- developer-->
+          <div class="col-md-6 mt-5">
+            <div
+              class="card profile-card"
+              style="background-color: rgb(38, 37, 38); height: 80%"
+            >
+              <div class="card-body pt-5">
+                <img
+                  src="./src/img/dev.png"
+                  alt="profile-image"
+                  class="profile"
+                />
+                <h5 class="card-title text-center">Bear Tech</h5>
+                <hr class="text-white" />
+                <p class="card-text text-center text-white-50">
+                  Nova leverages over two years of experience to craft visually
+                  stunning and engaging designs. Their artistry sets the stage
+                  for our bear-tastic world and leaves a lasting impression on
+                  our community.
+                </p>
+              </div>
+            </div>
+            <p class="mt-3 w-100 float-left text-center text-white">
+              <strong>DEVELOPER</strong>
+            </p>
+          </div>
+          <!-- artist  -->
+          <div class="col-md-6 mt-5">
+            <div
+              class="card profile-card"
+              style="background-color: rgb(38, 37, 38); height: 80%"
+            >
+              <div class="card-body pt-5">
+                <img
+                  src="./src/img/artist.png"
+                  alt="profile-image"
+                  class="profile"
+                />
+                <h5 class="card-title text-center">Bear Brush</h5>
+                <hr class="text-white" />
+                <p class="card-text text-center text-white-50">
+                  Description: Blaze Cipher, our skilled blockchain architect,
+                  plays a vital role in ensuring the security and efficiency of
+                  the Venom Bears ecosystem.
+                </p>
+              </div>
+            </div>
+            <p class="mt-3 w-100 float-left text-center text-white">
+              <strong>ARTIST</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- team section end -->
+
+    <!-- faq section start -->
+    <section
+      class="faq min-vh-100 align-content-center align-items-center d-grid"
+      id="faq"
+    >
+      <h1 class="text-center text-white" style="font-family: myfont">FAQ</h1>
+      <hr class="text-white-50" />
+      <div class="container-faq">
+        <nav class="so">
+          <input id="toggle" type="checkbox" checked />
+          <p class="faq-c mb-0 font2">What is Venom Bears?</p>
+          <ul>
+            <li>
+              <p class="font-monospace">
+                The cuddliest collection on the Venom Blockchain
+              </p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container-faq">
+        <nav class="so">
+          <input id="toggle" type="checkbox" checked />
+          <p class="faq-c mb-0 font2">What's the supply?</p>
+          <ul>
+            <li>
+              <p class="font-monospace">10,000 unique NFTs</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container-faq">
+        <nav class="so">
+          <input id="toggle" type="checkbox" checked />
+          <p class="faq-c mb-0 font2">Mint price?</p>
+          <ul>
+            <li>
+              <p class="font-monospace">TBD</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container-faq">
+        <nav class="so">
+          <input id="toggle" type="checkbox" checked />
+          <p class="faq-c mb-0 font2">Mint date?</p>
+          <ul>
+            <li>
+              <p class="font-monospace">TBD</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container-faq">
+        <nav class="so">
+          <input id="toggle" type="checkbox" checked />
+          <p class="faq-c mb-0 font2">How many mint phases there will be?</p>
+          <ul>
+            <li>
+              <p class="font-monospace">
+                There will be three mint stages : <br />
+                OG Sale, WL Sale and Public Sale
+              </p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container-faq">
+        <nav class="so">
+          <input id="toggle" type="checkbox" checked />
+          <p class="faq-c mb-0 font2">What's the royalty?</p>
+          <ul>
+            <li>
+              <p class="font-monospace">5%</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container-faq">
+        <nav class="so">
+          <input id="toggle" type="checkbox" checked />
+          <p class="faq-c mb-0 font2">Which wallet can I use to mint?</p>
+          <ul>
+            <li>
+              <p class="font-monospace fw-bolder">
+                THE VENOM WALLET
+                <a
+                  href="https://venomwallet.com/"
+                  style="text-decoration: underline; color: aqua"
+                >
+                  https://venomwallet.com/</a
+                >
+              </p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- faq section end -->
+    <div
+      class="popup"
+      style="background-color: rgb(37, 38, 38); color: #8ba7c5"
+    >
+      <i class="fa-sharp fa-solid fa-circle-xmark close-btn text-danger"></i>
+
+      <h2 id="title">title</h2>
+      <hr />
+      <p id="replace-me">text</p>
     </div>
-    <!--footer end-->
   </body>
+  <script src="./js/main.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
