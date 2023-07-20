@@ -1,3 +1,6 @@
+const navToggler = document.querySelector(".nav-toggler");
+const navMenu = document.querySelector(".site-navbar ul");
+const navLinks = document.querySelectorAll(".site-navbar a");
 var p = document.getElementById("replace-me");
 var t = document.getElementById("title");
 var t1 = "Phase 1: Bearlicious Beginnings";
@@ -65,3 +68,28 @@ document
     document.body.classList.remove("active-popup");
     document.body.classList.remove("blur-filter");
   });
+// define all UI variable
+
+// load all event listners
+allEventListners();
+
+// functions of all event listners
+function allEventListners() {
+  // toggler icon click event
+  navToggler.addEventListener("click", togglerClick);
+  // nav links click event
+  navLinks.forEach((elem) => elem.addEventListener("click", navLinkClick));
+}
+
+// togglerClick function
+function togglerClick() {
+  navToggler.classList.toggle("toggler-open");
+  navMenu.classList.toggle("open");
+}
+
+// navLinkClick function
+function navLinkClick() {
+  if (navMenu.classList.contains("open")) {
+    navToggler.click();
+  }
+}
