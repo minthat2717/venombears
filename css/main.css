@@ -23,10 +23,10 @@
   src: url(../src/font/FjallaOne-Regular.ttf);
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-body {
+/* body {
   background-color: aqua;
   height: 100%;
-}
+} */
 
 @font-face {
   font-family: myfont3;
